@@ -3,7 +3,7 @@ package mceliece348864f
 import (
 	"testing"
 
-	"github.com/cloudflare/circl/internal/test"
+	"github.com/katzenpost/circl/internal/test"
 )
 
 func TestCtz(t *testing.T) {

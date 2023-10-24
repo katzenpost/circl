@@ -4,9 +4,9 @@ import (
 	"crypto/subtle"
 	"math/bits"
 
-	"github.com/cloudflare/circl/internal/conv"
-	"github.com/cloudflare/circl/math"
-	fp "github.com/cloudflare/circl/math/fp448"
+	"github.com/katzenpost/circl/internal/conv"
+	"github.com/katzenpost/circl/math"
+	fp "github.com/katzenpost/circl/math/fp448"
 )
 
 // twistCurve is -x^2+y^2=1-39082x^2y^2 and is 4-isogeneous to Goldilocks.

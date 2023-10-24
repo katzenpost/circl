@@ -1,8 +1,8 @@
 package internal
 
 import (
-	"github.com/cloudflare/circl/internal/sha3"
-	"github.com/cloudflare/circl/pke/kyber/internal/common"
+	"github.com/katzenpost/circl/internal/sha3"
+	"github.com/katzenpost/circl/pke/kyber/internal/common"
 )
 
 // A Kyber.CPAPKE private key.

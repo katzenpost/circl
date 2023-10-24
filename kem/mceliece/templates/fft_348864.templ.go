@@ -9,7 +9,7 @@
 
 package {{.Pkg}}
 
-import "github.com/cloudflare/circl/kem/mceliece/internal"
+import "github.com/katzenpost/circl/kem/mceliece/internal"
 
 func fft(out *[exponent][gfBits]uint64, in *[gfBits]uint64) {
 	radixConversions(in)

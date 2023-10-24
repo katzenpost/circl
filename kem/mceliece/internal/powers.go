@@ -1,8 +1,8 @@
 package internal
 
 import (
-	"github.com/cloudflare/circl/math/gf2e12"
-	"github.com/cloudflare/circl/math/gf2e13"
+	"github.com/katzenpost/circl/math/gf2e12"
+	"github.com/katzenpost/circl/math/gf2e13"
 )
 
 var Powers4096 = [64][gf2e12.Bits]uint64{

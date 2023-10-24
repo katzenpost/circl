@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/cloudflare/circl/sign/dilithium/internal/common"
-	"github.com/cloudflare/circl/sign/dilithium/mode2"
+	"github.com/katzenpost/circl/sign/dilithium/internal/common"
+	"github.com/katzenpost/circl/sign/dilithium/mode2"
 )
 
 // implMode2 implements the mode.Mode interface for Dilithium2.

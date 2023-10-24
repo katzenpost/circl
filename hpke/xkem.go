@@ -7,9 +7,9 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/cloudflare/circl/dh/x25519"
-	"github.com/cloudflare/circl/dh/x448"
-	"github.com/cloudflare/circl/kem"
+	"github.com/katzenpost/circl/dh/x25519"
+	"github.com/katzenpost/circl/dh/x448"
+	"github.com/katzenpost/circl/kem"
 )
 
 type xKEM struct {

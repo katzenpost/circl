@@ -4,8 +4,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/cloudflare/circl/internal/test"
-	"github.com/cloudflare/circl/kem/mceliece/testdata"
+	"github.com/katzenpost/circl/internal/test"
+	"github.com/katzenpost/circl/kem/mceliece/testdata"
 )
 
 const testPath = "../testdata/testdata.txt.bz2"

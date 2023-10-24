@@ -9,8 +9,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/cloudflare/circl/internal/test"
-	"github.com/cloudflare/circl/kem"
+	"github.com/katzenpost/circl/internal/test"
+	"github.com/katzenpost/circl/kem"
 )
 
 func TestVectors(t *testing.T) {

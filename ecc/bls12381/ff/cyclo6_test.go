@@ -4,7 +4,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/cloudflare/circl/internal/test"
+	"github.com/katzenpost/circl/internal/test"
 )
 
 func randomCyclo6(t testing.TB) *Cyclo6 {

@@ -9,7 +9,7 @@ package p503
 import (
 	"math/bits"
 
-	"github.com/cloudflare/circl/dh/sidh/internal/common"
+	"github.com/katzenpost/circl/dh/sidh/internal/common"
 )
 
 // Compute z = x + y (mod p).

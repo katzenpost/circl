@@ -3,7 +3,7 @@ package goldilocks
 import (
 	"fmt"
 
-	fp "github.com/cloudflare/circl/math/fp448"
+	fp "github.com/katzenpost/circl/math/fp448"
 )
 
 type twistPoint struct{ x, y, z, ta, tb fp.Elt }

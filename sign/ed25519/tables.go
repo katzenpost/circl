@@ -1,6 +1,6 @@
 package ed25519
 
-import fp "github.com/cloudflare/circl/math/fp25519"
+import fp "github.com/katzenpost/circl/math/fp25519"
 
 var tabSign = [fxV][fx2w1]pointR3{
 	{

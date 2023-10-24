@@ -5,7 +5,7 @@ package dl
 import (
 	"io"
 
-	"github.com/cloudflare/circl/group"
+	"github.com/katzenpost/circl/group"
 )
 
 // Input: myGroup, the group we operate in

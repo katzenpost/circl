@@ -14,7 +14,7 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/cloudflare/circl/sign/dilithium/internal/common/params"
+	"github.com/katzenpost/circl/sign/dilithium/internal/common/params"
 )
 
 type Mode struct {

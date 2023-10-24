@@ -4,7 +4,7 @@
 package x25519
 
 import (
-	fp "github.com/cloudflare/circl/math/fp25519"
+	fp "github.com/katzenpost/circl/math/fp25519"
 	"golang.org/x/sys/cpu"
 )
 

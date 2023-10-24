@@ -12,7 +12,7 @@ import (
 	"io"
 	"math/big"
 
-	"github.com/cloudflare/circl/blindsign"
+	"github.com/katzenpost/circl/blindsign"
 )
 
 // An RSAVerifier represents a Verifier in the RSA blind signature protocol.

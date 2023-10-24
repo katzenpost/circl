@@ -9,7 +9,7 @@ import (
 	. "github.com/mmcloughlin/avo/operand" // nolint:golint,stylecheck
 	. "github.com/mmcloughlin/avo/reg"     // nolint:golint,stylecheck
 
-	"github.com/cloudflare/circl/sign/dilithium/internal/common/params"
+	"github.com/katzenpost/circl/sign/dilithium/internal/common/params"
 )
 
 // XXX align Poly on 16 bytes such that we can use aligned moves

@@ -1,4 +1,4 @@
-module github.com/cloudflare/circl
+module github.com/katzenpost/circl
 
 go 1.17
 

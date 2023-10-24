@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/cloudflare/circl/internal/nist"
+	"github.com/katzenpost/circl/internal/nist"
 )
 
 func TestPQCgenKATSign(t *testing.T) {

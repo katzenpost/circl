@@ -3,7 +3,7 @@
 package internal
 
 import (
-	"github.com/cloudflare/circl/sign/dilithium/internal/common"
+	"github.com/katzenpost/circl/sign/dilithium/internal/common"
 )
 
 // Splits 0 ≤ a < q into a₀ and a₁ with a = a₁*α + a₀ with -α/2 < a₀ ≤ α/2,

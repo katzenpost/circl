@@ -5,7 +5,7 @@
 
 package mceliece6960119f
 
-import "github.com/cloudflare/circl/kem/mceliece/internal"
+import "github.com/katzenpost/circl/kem/mceliece/internal"
 
 func fft(out *[exponent][gfBits]uint64, in *[2][gfBits]uint64) {
 	radixConversions(in)

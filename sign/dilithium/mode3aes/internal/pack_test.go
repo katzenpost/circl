@@ -5,7 +5,7 @@ package internal
 import (
 	"testing"
 
-	"github.com/cloudflare/circl/sign/dilithium/internal/common"
+	"github.com/katzenpost/circl/sign/dilithium/internal/common"
 )
 
 func TestPolyPackLeqEta(t *testing.T) {

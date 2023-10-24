@@ -5,10 +5,10 @@ import (
 	cryptoRand "crypto/rand"
 	"crypto/subtle"
 
-	"github.com/cloudflare/circl/dh/x25519"
-	"github.com/cloudflare/circl/dh/x448"
-	"github.com/cloudflare/circl/internal/sha3"
-	"github.com/cloudflare/circl/kem"
+	"github.com/katzenpost/circl/dh/x25519"
+	"github.com/katzenpost/circl/dh/x448"
+	"github.com/katzenpost/circl/internal/sha3"
+	"github.com/katzenpost/circl/kem"
 )
 
 type xPublicKey struct {

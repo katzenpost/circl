@@ -3,8 +3,8 @@ package common
 import (
 	"encoding/binary"
 
-	"github.com/cloudflare/circl/internal/sha3"
-	"github.com/cloudflare/circl/simd/keccakf1600"
+	"github.com/katzenpost/circl/internal/sha3"
+	"github.com/katzenpost/circl/simd/keccakf1600"
 )
 
 // DeriveX4Available indicates whether the system supports the quick fourway

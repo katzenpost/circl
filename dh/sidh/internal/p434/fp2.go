@@ -4,7 +4,7 @@
 package p434
 
 import (
-	"github.com/cloudflare/circl/dh/sidh/internal/common"
+	"github.com/katzenpost/circl/dh/sidh/internal/common"
 )
 
 // Montgomery multiplication. Input values must be already

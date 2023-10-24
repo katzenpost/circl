@@ -7,7 +7,7 @@
 package internal
 
 import (
-	"github.com/cloudflare/circl/pke/kyber/internal/common"
+	"github.com/katzenpost/circl/pke/kyber/internal/common"
 )
 
 const (

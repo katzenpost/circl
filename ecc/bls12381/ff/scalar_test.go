@@ -6,8 +6,8 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/cloudflare/circl/ecc/bls12381/ff"
-	"github.com/cloudflare/circl/internal/test"
+	"github.com/katzenpost/circl/ecc/bls12381/ff"
+	"github.com/katzenpost/circl/internal/test"
 )
 
 func randomScalar(t testing.TB) *ff.Scalar {

@@ -3,9 +3,9 @@ package polynomial_test
 import (
 	"testing"
 
-	"github.com/cloudflare/circl/group"
-	"github.com/cloudflare/circl/internal/test"
-	"github.com/cloudflare/circl/math/polynomial"
+	"github.com/katzenpost/circl/group"
+	"github.com/katzenpost/circl/internal/test"
+	"github.com/katzenpost/circl/math/polynomial"
 )
 
 func TestPolyDegree(t *testing.T) {

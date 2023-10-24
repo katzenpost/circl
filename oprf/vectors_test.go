@@ -12,9 +12,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/cloudflare/circl/group"
-	"github.com/cloudflare/circl/internal/test"
-	"github.com/cloudflare/circl/zk/dleq"
+	"github.com/katzenpost/circl/group"
+	"github.com/katzenpost/circl/internal/test"
+	"github.com/katzenpost/circl/zk/dleq"
 )
 
 type vector struct {

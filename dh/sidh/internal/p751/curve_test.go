@@ -6,7 +6,7 @@ package p751
 import (
 	"bytes"
 	crand "crypto/rand"
-	. "github.com/cloudflare/circl/dh/sidh/internal/common"
+	. "github.com/katzenpost/circl/dh/sidh/internal/common"
 	"io"
 	"math"
 	"math/rand"

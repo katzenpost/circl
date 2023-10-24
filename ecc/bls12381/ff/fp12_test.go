@@ -3,7 +3,7 @@ package ff
 import (
 	"testing"
 
-	"github.com/cloudflare/circl/internal/test"
+	"github.com/katzenpost/circl/internal/test"
 )
 
 func randomFp12(t testing.TB) *Fp12 { return &Fp12{*randomFp6(t), *randomFp6(t)} }

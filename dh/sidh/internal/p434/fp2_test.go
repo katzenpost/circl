@@ -9,7 +9,7 @@ import (
 	"testing"
 	"testing/quick"
 
-	"github.com/cloudflare/circl/dh/sidh/internal/common"
+	"github.com/katzenpost/circl/dh/sidh/internal/common"
 )
 
 type testParams struct {

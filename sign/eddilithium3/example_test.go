@@ -3,7 +3,7 @@ package eddilithium3_test
 import (
 	"fmt"
 
-	"github.com/cloudflare/circl/sign/eddilithium3"
+	"github.com/katzenpost/circl/sign/eddilithium3"
 )
 
 func Example() {

@@ -19,11 +19,11 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/cloudflare/circl/internal/nist"
-	"github.com/cloudflare/circl/internal/sha3"
-	"github.com/cloudflare/circl/kem"
-	"github.com/cloudflare/circl/kem/mceliece/internal"
-	"github.com/cloudflare/circl/math/gf2e13"
+	"github.com/katzenpost/circl/internal/nist"
+	"github.com/katzenpost/circl/internal/sha3"
+	"github.com/katzenpost/circl/kem"
+	"github.com/katzenpost/circl/kem/mceliece/internal"
+	"github.com/katzenpost/circl/math/gf2e13"
 )
 
 const (
