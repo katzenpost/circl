@@ -14,8 +14,8 @@ import (
 
 	cryptoRand "crypto/rand"
 	"github.com/katzenpost/circl/internal/sha3"
-	"github.com/katzenpost/circl/kem"
 	cpapke "github.com/katzenpost/circl/pke/kyber/kyber512"
+	"github.com/katzenpost/hpqc/primitive/kem"
 )
 
 const (
