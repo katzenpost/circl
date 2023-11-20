@@ -10,7 +10,7 @@ import (
 	"testing"
 
 	"github.com/katzenpost/circl/internal/test"
-	"github.com/katzenpost/circl/kem"
+	"github.com/katzenpost/hpqc/primitive/kem"
 )
 
 func TestVectors(t *testing.T) {

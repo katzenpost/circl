@@ -11,12 +11,15 @@ import (
 	"hash"
 	"io"
 
+	"golang.org/x/crypto/chacha20poly1305"
+	"golang.org/x/crypto/hkdf"
+
+	authkem "github.com/katzenpost/circl/kem"
+	"github.com/katzenpost/hpqc/primitive/kem"
+
 	"github.com/katzenpost/circl/dh/x25519"
 	"github.com/katzenpost/circl/dh/x448"
 	"github.com/katzenpost/circl/ecc/p384"
-	"github.com/katzenpost/circl/kem"
-	"golang.org/x/crypto/chacha20poly1305"
-	"golang.org/x/crypto/hkdf"
 )
 
 type KEM uint16
@@ -53,7 +56,7 @@ func (k KEM) IsValid() bool {
 
 // Scheme returns an instance of a KEM that supports authentication. Panics if
 // the KEM identifier is invalid.
-func (k KEM) Scheme() kem.AuthScheme {
+func (k KEM) Scheme() authkem.AuthScheme {
 	switch k {
 	case KEM_P256_HKDF_SHA256:
 		return dhkemp256hkdfsha256

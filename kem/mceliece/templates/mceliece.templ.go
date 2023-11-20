@@ -25,7 +25,7 @@ import (
 
 	"github.com/katzenpost/circl/internal/nist"
 	"github.com/katzenpost/circl/internal/sha3"
-	"github.com/katzenpost/circl/kem"
+	"github.com/katzenpost/hpqc/primitive/kem"
 	"github.com/katzenpost/circl/math/{{.Param.Gf}}"
 	"github.com/katzenpost/circl/kem/mceliece/internal"
 )

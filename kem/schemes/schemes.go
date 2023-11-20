@@ -20,7 +20,7 @@ import (
 	"strings"
 
 	"github.com/katzenpost/circl/hpke"
-	"github.com/katzenpost/circl/kem"
+	"github.com/katzenpost/hpqc/primitive/kem"
 	"github.com/katzenpost/circl/kem/frodo/frodo640shake"
 	"github.com/katzenpost/circl/kem/hybrid"
 	"github.com/katzenpost/circl/kem/kyber/kyber1024"

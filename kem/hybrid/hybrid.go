@@ -34,7 +34,7 @@ import (
 	"errors"
 
 	"github.com/katzenpost/circl/internal/sha3"
-	"github.com/katzenpost/circl/kem"
+	"github.com/katzenpost/hpqc/primitive/kem"
 	"github.com/katzenpost/circl/kem/kyber/kyber1024"
 	"github.com/katzenpost/circl/kem/kyber/kyber512"
 	"github.com/katzenpost/circl/kem/kyber/kyber768"

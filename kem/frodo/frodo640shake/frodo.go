@@ -8,7 +8,7 @@ import (
 	"io"
 
 	"github.com/katzenpost/circl/internal/sha3"
-	"github.com/katzenpost/circl/kem"
+	"github.com/katzenpost/hpqc/primitive/kem"
 )
 
 const (

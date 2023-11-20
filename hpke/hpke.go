@@ -19,7 +19,7 @@ import (
 	"errors"
 	"io"
 
-	"github.com/katzenpost/circl/kem"
+	"github.com/katzenpost/hpqc/primitive/kem"
 )
 
 const versionLabel = "HPKE-v1"

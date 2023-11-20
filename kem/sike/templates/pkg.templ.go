@@ -21,7 +21,7 @@ import (
 
 	"github.com/katzenpost/circl/dh/sidh"
 	"github.com/katzenpost/circl/internal/sha3"
-	"github.com/katzenpost/circl/kem"
+	"github.com/katzenpost/hpqc/primitive/kem"
 )
 
 

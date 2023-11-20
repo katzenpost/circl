@@ -9,7 +9,7 @@ import (
 
 	"github.com/katzenpost/circl/dh/x25519"
 	"github.com/katzenpost/circl/dh/x448"
-	"github.com/katzenpost/circl/kem"
+	"github.com/katzenpost/hpqc/primitive/kem"
 )
 
 type xKEM struct {
