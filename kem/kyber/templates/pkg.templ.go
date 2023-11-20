@@ -17,7 +17,7 @@ import (
 	"io"
 
 	"github.com/katzenpost/circl/internal/sha3"
-	"github.com/katzenpost/circl/kem"
+	"github.com/katzenpost/hpqc/primitive/kem"
 	cpapke "github.com/katzenpost/circl/pke/kyber/{{.Pkg}}"
 	cryptoRand "crypto/rand"
 )
