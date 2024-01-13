@@ -5,6 +5,7 @@ import (
 	_ "crypto/sha512"
 	"fmt"
 	"io"
+	"math/big"
 
 	r255 "github.com/bwesterb/go-ristretto"
 	"github.com/katzenpost/circl/expander"
@@ -99,7 +100,7 @@ func (g ristrettoGroup) HashToElementNonUniform(b, dst []byte) Element {
 }
 
 func (g ristrettoGroup) HashToElement(msg, dst []byte) Element {
-	// Compliaint with draft-irtf-cfrg-hash-to-curve.
+	// Compliant with draft-irtf-cfrg-hash-to-curve.
 	// Appendix B - Hashing to ristretto255
 	// https://datatracker.ietf.org/doc/html/draft-irtf-cfrg-hash-to-curve-14#appendix-B
 	// SuiteID: ristretto255_XMD:SHA-512_R255MAP_RO_
@@ -203,10 +204,11 @@ func (e *ristrettoElement) UnmarshalBinary(data []byte) error {
 	return e.p.UnmarshalBinary(data)
 }
 
-func (s *ristrettoScalar) Group() Group              { return Ristretto255 }
-func (s *ristrettoScalar) String() string            { return conv.BytesLe2Hex(s.s.Bytes()) }
-func (s *ristrettoScalar) SetUint64(n uint64) Scalar { s.s.SetUint64(n); return s }
-func (s *ristrettoScalar) IsZero() bool              { return s.s.IsNonZeroI() == 0 }
+func (s *ristrettoScalar) Group() Group                { return Ristretto255 }
+func (s *ristrettoScalar) String() string              { return conv.BytesLe2Hex(s.s.Bytes()) }
+func (s *ristrettoScalar) SetUint64(n uint64) Scalar   { s.s.SetUint64(n); return s }
+func (s *ristrettoScalar) SetBigInt(x *big.Int) Scalar { s.s.SetBigInt(x); return s }
+func (s *ristrettoScalar) IsZero() bool                { return s.s.IsNonZeroI() == 0 }
 func (s *ristrettoScalar) IsEqual(x Scalar) bool {
 	return s.s.Equals(&x.(*ristrettoScalar).s)
 }
