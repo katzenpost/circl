@@ -7,8 +7,9 @@ import (
 	"crypto/subtle"
 	"io"
 
+	"github.com/katzenpost/hpqc/kem"
+
 	"github.com/katzenpost/circl/internal/sha3"
-	"github.com/katzenpost/circl/kem"
 )
 
 const (

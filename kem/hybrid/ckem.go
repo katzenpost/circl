@@ -8,7 +8,8 @@ import (
 	"crypto/subtle"
 	"math/big"
 
-	"github.com/cloudflare/circl/kem"
+	"github.com/katzenpost/hpqc/kem"
+
 	"github.com/cloudflare/circl/xof"
 )
 

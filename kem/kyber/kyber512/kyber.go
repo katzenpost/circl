@@ -9,12 +9,13 @@ package kyber512
 
 import (
 	"bytes"
+	cryptoRand "crypto/rand"
 	"crypto/subtle"
 	"io"
 
-	cryptoRand "crypto/rand"
+	"github.com/katzenpost/hpqc/kem"
+
 	"github.com/katzenpost/circl/internal/sha3"
-	"github.com/katzenpost/circl/kem"
 	cpapke "github.com/katzenpost/circl/pke/kyber/kyber512"
 )
 

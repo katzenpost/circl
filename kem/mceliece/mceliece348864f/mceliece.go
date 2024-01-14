@@ -18,9 +18,10 @@ import (
 	cryptoRand "crypto/rand"
 	"io"
 
+	"github.com/katzenpost/hpqc/kem"
+
 	"github.com/katzenpost/circl/internal/nist"
 	"github.com/katzenpost/circl/internal/sha3"
-	"github.com/katzenpost/circl/kem"
 	"github.com/katzenpost/circl/kem/mceliece/internal"
 	"github.com/katzenpost/circl/math/gf2e12"
 )
