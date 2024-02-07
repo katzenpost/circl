@@ -16,9 +16,11 @@ package mceliece460896
 import (
 	"bytes"
 	cryptoRand "crypto/rand"
+	"errors"
 	"io"
 
 	"github.com/katzenpost/hpqc/kem"
+	"github.com/katzenpost/hpqc/kem/pem"
 
 	"github.com/katzenpost/circl/internal/nist"
 	"github.com/katzenpost/circl/internal/sha3"
@@ -706,6 +708,27 @@ func (pk *PublicKey) MarshalBinary() ([]byte, error) {
 	var ret [PublicKeySize]byte
 	copy(ret[:], pk.pk[:])
 	return ret[:], nil
+}
+
+func (pk *PublicKey) MarshalText() (text []byte, err error) {
+	return pem.ToPublicPEMBytes(pk), nil
+}
+
+func (pk *PublicKey) UnmarshalText(text []byte) error {
+	blob, err := pem.FromPublicPEMToBytes(text, pk.Scheme())
+	if err != nil {
+		return err
+	}
+	pubkey, err := pk.Scheme().UnmarshalBinaryPublicKey(blob)
+	if err != nil {
+		return err
+	}
+	var ok bool
+	pk, ok = pubkey.(*PublicKey)
+	if !ok {
+		return errors.New("type assertion failed")
+	}
+	return nil
 }
 
 func (*scheme) GenerateKeyPair() (kem.PublicKey, kem.PrivateKey, error) {

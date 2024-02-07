@@ -4,8 +4,9 @@ go 1.19
 
 require (
 	github.com/bwesterb/go-ristretto v1.2.3
-	golang.org/x/crypto v0.17.0
-	golang.org/x/sys v0.15.0
+	github.com/cloudflare/circl v1.3.7
+	golang.org/x/crypto v0.18.0
+	golang.org/x/sys v0.16.0
 )
 
-require github.com/katzenpost/hpqc v0.0.0-20240114172129-b96678fb103d // indirect
+require github.com/katzenpost/hpqc v0.0.3-0.20240207221731-873fa802001e
