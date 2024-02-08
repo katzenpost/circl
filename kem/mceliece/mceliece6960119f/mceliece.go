@@ -16,7 +16,6 @@ package mceliece6960119f
 import (
 	"bytes"
 	cryptoRand "crypto/rand"
-	"errors"
 	"fmt"
 	"io"
 

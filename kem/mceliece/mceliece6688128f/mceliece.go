@@ -16,7 +16,6 @@ package mceliece6688128f
 import (
 	"bytes"
 	cryptoRand "crypto/rand"
-	"errors"
 	"io"
 
 	"github.com/katzenpost/hpqc/kem"

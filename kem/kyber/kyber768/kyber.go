@@ -11,7 +11,6 @@ import (
 	"bytes"
 	cryptoRand "crypto/rand"
 	"crypto/subtle"
-	"errors"
 	"io"
 
 	"github.com/katzenpost/hpqc/kem"
