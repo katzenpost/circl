@@ -489,11 +489,11 @@ func (pk *PublicKey) UnmarshalText(text []byte) error {
 	if err != nil {
 		return err
 	}
-	var ok bool
-	pk, ok = pubkey.(*PublicKey)
+	newpk, ok := pubkey.(*PublicKey)
 	if !ok {
-		return errors.New("type assertion failed")
+		return errors.New("public key type assertion failed")
 	}
+	*pk = *newpk
 	return nil
 }
 
