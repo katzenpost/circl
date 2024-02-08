@@ -4,6 +4,8 @@ github.com/cloudflare/circl v1.3.7 h1:qlCDlTPz2n9fu58M0Nh1J/JzcFpfgkFHHX3O35r5vc
 github.com/cloudflare/circl v1.3.7/go.mod h1:sRTcRWXGLrKw6yIGJ+l7amYJFfAXbZG0kBSc8r4zxgA=
 github.com/katzenpost/hpqc v0.0.3-0.20240207221731-873fa802001e h1:kHPbocS50Eg9ITnmA7zQcI+UF++voVE7l1e1gF8785w=
 github.com/katzenpost/hpqc v0.0.3-0.20240207221731-873fa802001e/go.mod h1:cen9fo1a9MAQCoZjg46aWFPdUjFsN3uYhq6mrqiWUHI=
+github.com/katzenpost/hpqc v0.0.4-0.20240208043333-a3612ffc463b h1:X5wLm2eEA2bHVXxdUjrtO6nOPSZ2cY1omZA9u9siQrY=
+github.com/katzenpost/hpqc v0.0.4-0.20240208043333-a3612ffc463b/go.mod h1:vQ/E+Zim1pTF8FIw9ETDvH76ls/z0T9JOzwWnLbqc4Q=
 golang.org/x/crypto v0.18.0 h1:PGVlW0xEltQnzFZ55hkuX5+KLyrMYhHld1YHO4AKcdc=
 golang.org/x/crypto v0.18.0/go.mod h1:R0j02AL6hcrfOiy9T4ZYp/rcWeMxM3L6QYxlOuEG1mg=
 golang.org/x/sys v0.16.0 h1:xWw16ngr6ZMtmxDyKyIgsE93KNKz5HKmMa3b8ALHidU=
