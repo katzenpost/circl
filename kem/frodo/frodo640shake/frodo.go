@@ -5,7 +5,6 @@ import (
 	"bytes"
 	cryptoRand "crypto/rand"
 	"crypto/subtle"
-	"errors"
 	"io"
 
 	"github.com/katzenpost/hpqc/kem"
@@ -480,23 +479,6 @@ func (pk *PublicKey) MarshalText() (text []byte, err error) {
 	return pem.ToPublicPEMBytes(pk), nil
 }
 
-func (pk *PublicKey) UnmarshalText(text []byte) error {
-	blob, err := pem.FromPublicPEMToBytes(text, pk.Scheme())
-	if err != nil {
-		return err
-	}
-	pubkey, err := pk.Scheme().UnmarshalBinaryPublicKey(blob)
-	if err != nil {
-		return err
-	}
-	newpk, ok := pubkey.(*PublicKey)
-	if !ok {
-		return errors.New("public key type assertion failed")
-	}
-	*pk = *newpk
-	return nil
-}
-
 func (*scheme) GenerateKeyPair() (kem.PublicKey, kem.PrivateKey, error) {
 	return generateKeyPair(cryptoRand.Reader)
 }
@@ -568,4 +550,12 @@ func (*scheme) UnmarshalBinaryPrivateKey(buf []byte) (kem.PrivateKey, error) {
 	var ret PrivateKey
 	ret.Unpack(buf)
 	return &ret, nil
+}
+
+func (s *scheme) UnmarshalTextPublicKey(text []byte) (kem.PublicKey, error) {
+	return pem.FromPublicPEMBytes(text, s)
+}
+
+func (s *scheme) UnmarshalTextPrivateKey(text []byte) (kem.PrivateKey, error) {
+	return pem.FromPrivatePEMBytes(text, s)
 }

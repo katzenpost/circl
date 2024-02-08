@@ -9,4 +9,4 @@ require (
 	golang.org/x/sys v0.16.0
 )
 
-require github.com/katzenpost/hpqc v0.0.3-0.20240207221731-873fa802001e
+require github.com/katzenpost/hpqc v0.0.4-0.20240208043333-a3612ffc463b
