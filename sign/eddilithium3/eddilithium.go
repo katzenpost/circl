@@ -7,8 +7,9 @@ import (
 	"errors"
 	"io"
 
+	"github.com/katzenpost/hpqc/sign"
+
 	"github.com/katzenpost/circl/internal/sha3"
-	"github.com/katzenpost/circl/sign"
 	"github.com/katzenpost/circl/sign/dilithium/mode3"
 	"github.com/katzenpost/circl/sign/ed448"
 )
