@@ -37,6 +37,7 @@ import (
 	"github.com/katzenpost/circl/internal/sha3"
 
 	"github.com/katzenpost/hpqc/sign"
+	"github.com/katzenpost/hpqc/sign/pem"
 )
 
 const (
@@ -127,6 +128,10 @@ func (pub PublicKey) MarshalBinary() (data []byte, err error) {
 	publicKey := make(PublicKey, PublicKeySize)
 	copy(publicKey, pub)
 	return publicKey, nil
+}
+
+func (pub PublicKey) MarshalText() (text []byte, err error) {
+	return pem.ToPublicPEMBytes(sign.PublicKey(pub)), nil
 }
 
 // Sign creates a signature of a message given a key pair.
