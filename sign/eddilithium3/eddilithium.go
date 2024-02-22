@@ -7,8 +7,10 @@ import (
 	"errors"
 	"io"
 
+	"github.com/katzenpost/hpqc/sign"
+	"github.com/katzenpost/hpqc/sign/pem"
+
 	"github.com/katzenpost/circl/internal/sha3"
-	"github.com/katzenpost/circl/sign"
 	"github.com/katzenpost/circl/sign/dilithium/mode3"
 	"github.com/katzenpost/circl/sign/ed448"
 )
@@ -152,6 +154,10 @@ func (sk *PrivateKey) Bytes() []byte {
 // MarshalBinary packs the public key.
 func (pk *PublicKey) MarshalBinary() ([]byte, error) {
 	return pk.Bytes(), nil
+}
+
+func (pk *PublicKey) MarshalText() (text []byte, err error) {
+	return pem.ToPublicPEMBytes(sign.PublicKey(pk)), nil
 }
 
 // MarshalBinary packs the private key.
