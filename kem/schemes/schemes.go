@@ -19,10 +19,7 @@ package schemes
 import (
 	"strings"
 
-	"github.com/katzenpost/circl/hpke"
-	"github.com/katzenpost/circl/kem"
 	"github.com/katzenpost/circl/kem/frodo/frodo640shake"
-	"github.com/katzenpost/circl/kem/hybrid"
 	"github.com/katzenpost/circl/kem/kyber/kyber1024"
 	"github.com/katzenpost/circl/kem/kyber/kyber512"
 	"github.com/katzenpost/circl/kem/kyber/kyber768"
@@ -36,14 +33,10 @@ import (
 	"github.com/katzenpost/circl/kem/mceliece/mceliece6960119f"
 	"github.com/katzenpost/circl/kem/mceliece/mceliece8192128"
 	"github.com/katzenpost/circl/kem/mceliece/mceliece8192128f"
+	"github.com/katzenpost/hpqc/kem"
 )
 
 var allSchemes = [...]kem.Scheme{
-	hpke.KEM_P256_HKDF_SHA256.Scheme(),
-	hpke.KEM_P384_HKDF_SHA384.Scheme(),
-	hpke.KEM_P521_HKDF_SHA512.Scheme(),
-	hpke.KEM_X25519_HKDF_SHA256.Scheme(),
-	hpke.KEM_X448_HKDF_SHA512.Scheme(),
 	frodo640shake.Scheme(),
 	kyber512.Scheme(),
 	kyber768.Scheme(),
@@ -58,11 +51,6 @@ var allSchemes = [...]kem.Scheme{
 	mceliece6960119f.Scheme(),
 	mceliece8192128.Scheme(),
 	mceliece8192128f.Scheme(),
-	hybrid.Kyber512X25519(),
-	hybrid.Kyber768X25519(),
-	hybrid.Kyber768X448(),
-	hybrid.Kyber1024X448(),
-	hybrid.P256Kyber768Draft00(),
 }
 
 var allSchemeNames map[string]kem.Scheme

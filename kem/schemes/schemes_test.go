@@ -2,7 +2,6 @@ package schemes_test
 
 import (
 	"bytes"
-	"fmt"
 	"testing"
 
 	"github.com/katzenpost/circl/kem/schemes"
@@ -137,37 +136,4 @@ func TestApi(t *testing.T) {
 			}
 		})
 	}
-}
-
-func Example_schemes() {
-	// import "github.com/katzenpost/circl/kem/schemes"
-
-	for _, sch := range schemes.All() {
-		fmt.Println(sch.Name())
-	}
-	// Output:
-	// HPKE_KEM_P256_HKDF_SHA256
-	// HPKE_KEM_P384_HKDF_SHA384
-	// HPKE_KEM_P521_HKDF_SHA512
-	// HPKE_KEM_X25519_HKDF_SHA256
-	// HPKE_KEM_X448_HKDF_SHA512
-	// FrodoKEM-640-SHAKE
-	// Kyber512
-	// Kyber768
-	// Kyber1024
-	// mceliece348864
-	// mceliece348864f
-	// mceliece460896
-	// mceliece460896f
-	// mceliece6688128
-	// mceliece6688128f
-	// mceliece6960119
-	// mceliece6960119f
-	// mceliece8192128
-	// mceliece8192128f
-	// Kyber512-X25519
-	// Kyber768-X25519
-	// Kyber768-X448
-	// Kyber1024-X448
-	// P256Kyber768Draft00
 }
