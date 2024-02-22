@@ -11,15 +11,13 @@ package schemes
 import (
 	"strings"
 
-	"github.com/katzenpost/circl/sign"
-	"github.com/katzenpost/circl/sign/ed25519"
 	"github.com/katzenpost/circl/sign/ed448"
 	"github.com/katzenpost/circl/sign/eddilithium2"
 	"github.com/katzenpost/circl/sign/eddilithium3"
+	"github.com/katzenpost/hpqc/sign"
 )
 
 var allSchemes = [...]sign.Scheme{
-	ed25519.Scheme(),
 	ed448.Scheme(),
 	eddilithium2.Scheme(),
 	eddilithium3.Scheme(),

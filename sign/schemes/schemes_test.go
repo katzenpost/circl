@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/katzenpost/circl/sign"
 	"github.com/katzenpost/circl/sign/schemes"
+	"github.com/katzenpost/hpqc/sign"
 )
 
 func TestCaseSensitivity(t *testing.T) {
@@ -106,17 +106,6 @@ func TestApi(t *testing.T) {
 			}
 		})
 	}
-}
-
-func Example() {
-	for _, sch := range schemes.All() {
-		fmt.Println(sch.Name())
-	}
-	// Output:
-	// Ed25519
-	// Ed448
-	// Ed25519-Dilithium2
-	// Ed448-Dilithium3
 }
 
 func BenchmarkGenerateKeyPair(b *testing.B) {
