@@ -8,7 +8,8 @@ import (
 	"github.com/katzenpost/circl/dh/x25519"
 	"github.com/katzenpost/circl/dh/x448"
 	"github.com/katzenpost/circl/internal/sha3"
-	"github.com/katzenpost/circl/kem"
+	"github.com/katzenpost/hpqc/kem"
+	"github.com/katzenpost/hpqc/kem/pem"
 )
 
 type xPublicKey struct {
@@ -97,6 +98,10 @@ func (pk *xPublicKey) MarshalBinary() ([]byte, error) {
 	ret := make([]byte, pk.scheme.size)
 	copy(ret, pk.key)
 	return ret, nil
+}
+
+func (pk *xPublicKey) MarshalText() (text []byte, err error) {
+	return pem.ToPublicPEMBytes(pk), nil
 }
 
 func (sch *xScheme) GenerateKeyPair() (kem.PublicKey, kem.PrivateKey, error) {
@@ -205,4 +210,12 @@ func (sch *xScheme) UnmarshalBinaryPrivateKey(buf []byte) (kem.PrivateKey, error
 	ret := xPrivateKey{sch, make([]byte, sch.size)}
 	copy(ret.key, buf)
 	return &ret, nil
+}
+
+func (sch *xScheme) UnmarshalTextPublicKey(text []byte) (kem.PublicKey, error) {
+	return pem.FromPublicPEMBytes(text, sch)
+}
+
+func (sch *xScheme) UnmarshalTextPrivateKey(text []byte) (kem.PrivateKey, error) {
+	return pem.FromPrivatePEMBytes(text, sch)
 }

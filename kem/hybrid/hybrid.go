@@ -34,7 +34,8 @@ import (
 	"errors"
 
 	"github.com/katzenpost/circl/internal/sha3"
-	"github.com/katzenpost/circl/kem"
+	"github.com/katzenpost/hpqc/kem"
+	"github.com/katzenpost/hpqc/kem/pem"
 	"github.com/katzenpost/circl/kem/kyber/kyber1024"
 	"github.com/katzenpost/circl/kem/kyber/kyber512"
 	"github.com/katzenpost/circl/kem/kyber/kyber768"
@@ -210,6 +211,10 @@ func (pk *publicKey) MarshalBinary() ([]byte, error) {
 	return append(first, second...), nil
 }
 
+func (pk *publicKey) MarshalText() (text []byte, err error) {
+	return pem.ToPublicPEMBytes(pk), nil
+}
+
 func (sch *scheme) GenerateKeyPair() (kem.PublicKey, kem.PrivateKey, error) {
 	pk1, sk1, err := sch.first.GenerateKeyPair()
 	if err != nil {
@@ -341,4 +346,12 @@ func (sch *scheme) UnmarshalBinaryPrivateKey(buf []byte) (kem.PrivateKey, error)
 		return nil, err
 	}
 	return &privateKey{sch, sk1, sk2}, nil
+}
+
+func (sch *scheme) UnmarshalTextPublicKey(text []byte) (kem.PublicKey, error) {
+	return pem.FromPublicPEMBytes(text, sch)
+}
+
+func (sch *scheme) UnmarshalTextPrivateKey(text []byte) (kem.PrivateKey, error) {
+	return pem.FromPrivatePEMBytes(text, sch)
 }
