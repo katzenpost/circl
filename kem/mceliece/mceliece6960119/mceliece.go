@@ -183,6 +183,7 @@ func kemEncapsulate(c *[CiphertextSize]byte, key *[SharedKeySize]byte, pk *[Publ
 		return nil
 	}
 	return fmt.Errorf("public key padding error %d", paddingOk)
+
 }
 
 // KEM Decapsulation.
@@ -222,6 +223,7 @@ func kemDecapsulate(key *[SharedKeySize]byte, c *[CiphertextSize]byte, sk *[Priv
 		return nil
 	}
 	return fmt.Errorf("public key padding error %d", paddingOk)
+
 }
 
 // Generates `e`, a random error vector of weight `t`.

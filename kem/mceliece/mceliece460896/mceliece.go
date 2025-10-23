@@ -16,6 +16,7 @@ package mceliece460896
 import (
 	"bytes"
 	cryptoRand "crypto/rand"
+
 	"io"
 
 	"github.com/katzenpost/hpqc/kem"
@@ -169,6 +170,7 @@ func kemEncapsulate(c *[CiphertextSize]byte, key *[SharedKeySize]byte, pk *[Publ
 	}
 
 	return nil
+
 }
 
 // KEM Decapsulation.
@@ -197,6 +199,7 @@ func kemDecapsulate(key *[SharedKeySize]byte, c *[CiphertextSize]byte, sk *[Priv
 	}
 
 	return nil
+
 }
 
 // input: public key pk, error vector e

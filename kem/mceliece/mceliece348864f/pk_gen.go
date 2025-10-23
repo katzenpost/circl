@@ -51,6 +51,7 @@ func toBitslicing2x(out0 *[exponent][gfBits]uint64, out1 *[exponent][gfBits]uint
 }
 
 func irrLoad(out *[gfBits]uint64, in []byte) {
+
 	irr := [sysT + 1]uint16{}
 
 	for i := 0; i < sysT; i++ {
@@ -69,6 +70,7 @@ func irrLoad(out *[gfBits]uint64, in []byte) {
 			out[j] |= uint64(irr[i]>>j) & 1
 		}
 	}
+
 }
 
 // Return number of trailing zeros of the non-zero input `input`
@@ -102,7 +104,9 @@ func movColumns(mat *[pkNRows][(sysN + 63) / 64]uint64, pi []int16, pivots *uint
 	// extract the 32x64 matrix
 
 	for i := 0; i < 32; i++ {
+
 		buf[i] = (mat[row+i][blockIdx+0] >> 32) | (mat[row+i][blockIdx+1] << 32)
+
 	}
 
 	// compute the column indices of pivots by Gaussian elimination.
@@ -284,6 +288,7 @@ func pkGen(pk *[pkNRows * pkRowBytes]byte, irr []byte, perm *[1 << gfBits]uint32
 
 			for c := 0; c < nblocksH; c++ {
 				mat[k][c] ^= mat[row][c] & mask
+
 			}
 		}
 	}

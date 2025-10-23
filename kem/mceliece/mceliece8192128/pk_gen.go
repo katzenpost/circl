@@ -199,6 +199,7 @@ func pkGen(pk *[pkNRows * pkRowBytes]byte, irr []byte, perm *[1 << gfBits]uint32
 				}
 			}
 		}
+
 	}
 
 	pkp := pk[:]

@@ -99,7 +99,9 @@ func movColumns(mat *[pkNRows][(sysN + 63) / 64]uint64, pi []int16, pivots *uint
 	// extract the 32x64 matrix
 
 	for i := 0; i < 32; i++ {
+
 		buf[i] = (mat[row+i][blockIdx+0] >> 32) | (mat[row+i][blockIdx+1] << 32)
+
 	}
 
 	// compute the column indices of pivots by Gaussian elimination.
@@ -282,18 +284,22 @@ func pkGen(pk *[pkNRows * pkRowBytes]byte, irr []byte, perm *[1 << gfBits]uint32
 
 				for c := 0; c < nblocksH; c++ {
 					mat[k][c] ^= mat[row][c] & mask
+
 				}
 			}
 		}
+
 	}
 
 	pkp := pk[:]
 
 	for i := 0; i < pkNRows; i++ {
+
 		for j := nblocksI; j < nblocksH; j++ {
 			store8(pkp, mat[i][j])
 			pkp = pkp[8:]
 		}
+
 	}
 
 	return true
