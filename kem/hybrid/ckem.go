@@ -9,6 +9,7 @@ import (
 	"math/big"
 
 	"github.com/katzenpost/hpqc/kem"
+	"github.com/katzenpost/hpqc/kem/pem"
 
 	"github.com/cloudflare/circl/xof"
 )
@@ -105,6 +106,10 @@ func (pk *cPublicKey) Equal(other kem.PublicKey) bool {
 
 func (pk *cPublicKey) MarshalBinary() ([]byte, error) {
 	return elliptic.Marshal(pk.scheme.curve, pk.x, pk.y), nil
+}
+
+func (pk *cPublicKey) MarshalText() (text []byte, err error) {
+	return pem.ToPublicPEMBytes(pk), nil
 }
 
 func (sch *cScheme) GenerateKeyPair() (kem.PublicKey, kem.PrivateKey, error) {
@@ -205,4 +210,12 @@ func (sch *cScheme) UnmarshalBinaryPrivateKey(buf []byte) (kem.PrivateKey, error
 	ret := cPrivateKey{sch, make([]byte, sch.PrivateKeySize())}
 	copy(ret.key, buf)
 	return &ret, nil
+}
+
+func (sch *cScheme) UnmarshalTextPublicKey(text []byte) (kem.PublicKey, error) {
+	return pem.FromPublicPEMBytes(text, sch)
+}
+
+func (sch *cScheme) UnmarshalTextPrivateKey(text []byte) (kem.PrivateKey, error) {
+	return pem.FromPrivatePEMBytes(text, sch)
 }

@@ -212,4 +212,5 @@ func butterflies(out *[exponent][gfBits]uint64, in *[2][gfBits]uint64) {
 			out[i][b] ^= internal.Powers8192[i][b]
 		}
 	}
+
 }

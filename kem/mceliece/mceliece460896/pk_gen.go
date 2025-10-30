@@ -51,6 +51,7 @@ func toBitslicing2x(out0 *[exponent][gfBits]uint64, out1 *[exponent][gfBits]uint
 }
 
 func irrLoad(out *[2][gfBits]uint64, in []byte) {
+
 	irr := [sysT + 1]uint16{}
 
 	for i := 0; i < sysT; i++ {
@@ -76,6 +77,7 @@ func irrLoad(out *[2][gfBits]uint64, in []byte) {
 		out[0][i] = v[0]
 		out[1][i] = v[1]
 	}
+
 }
 
 // nolint:unparam

@@ -80,6 +80,7 @@ func vecInv(out, in *[gfBits]uint64) {
 	vecMul(out, out, in) // 11111111111
 
 	vecSq(out, out) // 111111111110
+
 }
 
 func vecSetBits(b uint64) uint64 {

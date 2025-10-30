@@ -15,7 +15,8 @@ import (
 	"github.com/katzenpost/circl/dh/x448"
 	"github.com/katzenpost/circl/ecc/p384"
 	"github.com/katzenpost/circl/kem"
-	"github.com/katzenpost/circl/kem/kyber/kyber768"
+
+	// "github.com/katzenpost/circl/kem/kyber/kyber768"
 
 	"golang.org/x/crypto/chacha20poly1305"
 	"golang.org/x/crypto/hkdf"
@@ -71,8 +72,8 @@ func (k KEM) Scheme() kem.AuthScheme {
 		return dhkemx25519hkdfsha256
 	case KEM_X448_HKDF_SHA512:
 		return dhkemx448hkdfsha512
-	case KEM_X25519_KYBER768_DRAFT00:
-		return hybridkemX25519Kyber768
+	// case KEM_X25519_KYBER768_DRAFT00:
+	// 	return hybridkemX25519Kyber768
 	default:
 		panic(ErrInvalidKEM)
 	}
@@ -271,9 +272,10 @@ func init() {
 	dhkemx448hkdfsha512.dhKemBase.Hash = crypto.SHA512
 	dhkemx448hkdfsha512.dhKemBase.dhKEM = dhkemx448hkdfsha512
 
-	hybridkemX25519Kyber768.kemBase.id = KEM_X25519_KYBER768_DRAFT00
-	hybridkemX25519Kyber768.kemBase.name = "HPKE_KEM_X25519_KYBER768_HKDF_SHA256"
-	hybridkemX25519Kyber768.kemBase.Hash = crypto.SHA256
-	hybridkemX25519Kyber768.kemA = dhkemx25519hkdfsha256
-	hybridkemX25519Kyber768.kemB = kyber768.Scheme()
+	// Commenting out Kyber768 hybrid KEM due to KEM interface incompatibility
+	// hybridkemX25519Kyber768.kemBase.id = KEM_X25519_KYBER768_DRAFT00
+	// hybridkemX25519Kyber768.kemBase.name = "HPKE_KEM_X25519_KYBER768_HKDF_SHA256"
+	// hybridkemX25519Kyber768.kemBase.Hash = crypto.SHA256
+	// hybridkemX25519Kyber768.kemA = dhkemx25519hkdfsha256
+	// hybridkemX25519Kyber768.kemB = kyber768.Scheme()
 }

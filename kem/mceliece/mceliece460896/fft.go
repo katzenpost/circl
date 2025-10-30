@@ -205,4 +205,5 @@ func butterflies(out *[exponent][gfBits]uint64, in *[2][gfBits]uint64) {
 
 		constsPtr += 1 << i
 	}
+
 }
