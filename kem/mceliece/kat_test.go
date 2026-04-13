@@ -33,7 +33,6 @@ func TestPQCgenKATKem(t *testing.T) {
 	}
 
 	for _, kat := range kats {
-		kat := kat
 		t.Run(kat.name, func(t *testing.T) {
 			testPQCgenKATKem(t, kat.name, kat.want)
 		})
