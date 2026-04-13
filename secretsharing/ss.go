@@ -26,8 +26,8 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/cloudflare/circl/group"
-	"github.com/cloudflare/circl/math/polynomial"
+	"github.com/katzenpost/circl/group"
+	"github.com/katzenpost/circl/math/polynomial"
 )
 
 // Share represents a share of a secret.

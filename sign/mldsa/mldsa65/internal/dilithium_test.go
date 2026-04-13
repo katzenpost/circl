@@ -7,7 +7,7 @@ import (
 	"io"
 	"testing"
 
-	common "github.com/cloudflare/circl/sign/internal/dilithium"
+	common "github.com/katzenpost/circl/sign/internal/dilithium"
 )
 
 // Checks whether p is normalized.  Only used in tests.

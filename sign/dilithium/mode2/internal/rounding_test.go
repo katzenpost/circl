@@ -6,7 +6,7 @@ import (
 	"flag"
 	"testing"
 
-	common "github.com/cloudflare/circl/sign/internal/dilithium"
+	common "github.com/katzenpost/circl/sign/internal/dilithium"
 )
 
 var runVeryLongTest = flag.Bool("very-long", false, "runs very long tests")

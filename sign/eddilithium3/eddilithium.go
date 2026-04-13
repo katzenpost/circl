@@ -7,10 +7,10 @@ import (
 	"errors"
 	"io"
 
-	"github.com/cloudflare/circl/internal/sha3"
-	"github.com/cloudflare/circl/sign"
-	"github.com/cloudflare/circl/sign/dilithium/mode3"
-	"github.com/cloudflare/circl/sign/ed448"
+	"github.com/katzenpost/circl/internal/sha3"
+	"github.com/katzenpost/circl/sign"
+	"github.com/katzenpost/circl/sign/dilithium/mode3"
+	"github.com/katzenpost/circl/sign/ed448"
 )
 
 const (

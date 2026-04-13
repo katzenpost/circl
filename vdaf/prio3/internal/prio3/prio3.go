@@ -15,8 +15,8 @@ import (
 	"crypto/subtle"
 	"errors"
 
-	"github.com/cloudflare/circl/vdaf/prio3/arith"
-	"github.com/cloudflare/circl/vdaf/prio3/internal/cursor"
+	"github.com/katzenpost/circl/vdaf/prio3/arith"
+	"github.com/katzenpost/circl/vdaf/prio3/internal/cursor"
 )
 
 // Prio3 supports a variety of verifiable distributed aggregation functions.

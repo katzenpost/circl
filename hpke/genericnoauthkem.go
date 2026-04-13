@@ -3,8 +3,8 @@ package hpke
 // Shim to use generic KEM (kem.Scheme) as HPKE KEM.
 
 import (
-	"github.com/cloudflare/circl/internal/sha3"
-	"github.com/cloudflare/circl/kem"
+	"github.com/katzenpost/circl/internal/sha3"
+	"github.com/katzenpost/circl/kem"
 )
 
 // genericNoAuthKEM wraps a generic KEM (kem.Scheme) to be used as a HPKE KEM.

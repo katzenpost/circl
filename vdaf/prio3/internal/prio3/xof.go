@@ -4,8 +4,8 @@ import (
 	"encoding/binary"
 	"math"
 
-	"github.com/cloudflare/circl/internal/sha3"
-	"github.com/cloudflare/circl/vdaf/prio3/arith"
+	"github.com/katzenpost/circl/internal/sha3"
+	"github.com/katzenpost/circl/vdaf/prio3/arith"
 )
 
 // xofTS allows to derive seeds and vector of elements from TurboSHAKE.

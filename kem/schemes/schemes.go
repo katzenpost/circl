@@ -19,17 +19,17 @@ package schemes
 import (
 	"strings"
 
-	"github.com/cloudflare/circl/hpke"
-	"github.com/cloudflare/circl/kem"
-	"github.com/cloudflare/circl/kem/frodo/frodo640shake"
-	"github.com/cloudflare/circl/kem/hybrid"
-	"github.com/cloudflare/circl/kem/kyber/kyber1024"
-	"github.com/cloudflare/circl/kem/kyber/kyber512"
-	"github.com/cloudflare/circl/kem/kyber/kyber768"
-	"github.com/cloudflare/circl/kem/mlkem/mlkem1024"
-	"github.com/cloudflare/circl/kem/mlkem/mlkem512"
-	"github.com/cloudflare/circl/kem/mlkem/mlkem768"
-	"github.com/cloudflare/circl/kem/xwing"
+	"github.com/katzenpost/circl/hpke"
+	"github.com/katzenpost/circl/kem"
+	"github.com/katzenpost/circl/kem/frodo/frodo640shake"
+	"github.com/katzenpost/circl/kem/hybrid"
+	"github.com/katzenpost/circl/kem/kyber/kyber1024"
+	"github.com/katzenpost/circl/kem/kyber/kyber512"
+	"github.com/katzenpost/circl/kem/kyber/kyber768"
+	"github.com/katzenpost/circl/kem/mlkem/mlkem1024"
+	"github.com/katzenpost/circl/kem/mlkem/mlkem512"
+	"github.com/katzenpost/circl/kem/mlkem/mlkem768"
+	"github.com/katzenpost/circl/kem/xwing"
 )
 
 var allSchemes = [...]kem.Scheme{

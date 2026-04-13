@@ -4,7 +4,7 @@ import (
 	"crypto/rand"
 	"testing"
 
-	pairing "github.com/cloudflare/circl/ecc/bls12381"
+	pairing "github.com/katzenpost/circl/ecc/bls12381"
 )
 
 func TestRightMultLinearityGT(t *testing.T) {

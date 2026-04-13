@@ -10,10 +10,10 @@ import (
 	"errors"
 	"io"
 
-	"github.com/cloudflare/circl/dh/x25519"
-	"github.com/cloudflare/circl/internal/sha3"
-	"github.com/cloudflare/circl/kem"
-	"github.com/cloudflare/circl/kem/mlkem/mlkem768"
+	"github.com/katzenpost/circl/dh/x25519"
+	"github.com/katzenpost/circl/internal/sha3"
+	"github.com/katzenpost/circl/kem"
+	"github.com/katzenpost/circl/kem/mlkem/mlkem768"
 )
 
 // An X-Wing private key.

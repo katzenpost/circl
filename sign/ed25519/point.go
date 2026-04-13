@@ -1,6 +1,6 @@
 package ed25519
 
-import fp "github.com/cloudflare/circl/math/fp25519"
+import fp "github.com/katzenpost/circl/math/fp25519"
 
 type (
 	pointR1 struct{ x, y, z, ta, tb fp.Elt }

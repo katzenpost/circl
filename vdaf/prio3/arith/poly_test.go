@@ -4,8 +4,8 @@ import (
 	"slices"
 	"testing"
 
-	"github.com/cloudflare/circl/internal/test"
-	"github.com/cloudflare/circl/math"
+	"github.com/katzenpost/circl/internal/test"
+	"github.com/katzenpost/circl/math"
 )
 
 const Degree = 1024

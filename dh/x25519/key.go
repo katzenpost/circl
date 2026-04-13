@@ -3,7 +3,7 @@ package x25519
 import (
 	"crypto/subtle"
 
-	fp "github.com/cloudflare/circl/math/fp25519"
+	fp "github.com/katzenpost/circl/math/fp25519"
 )
 
 // Size is the length in bytes of a X25519 key.

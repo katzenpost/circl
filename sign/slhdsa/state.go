@@ -6,7 +6,7 @@ import (
 	"hash"
 	"io"
 
-	"github.com/cloudflare/circl/internal/sha3"
+	"github.com/katzenpost/circl/internal/sha3"
 )
 
 // statePriv encapsulates common data for performing a private operation.

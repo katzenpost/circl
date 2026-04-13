@@ -23,8 +23,8 @@ import (
 	cryptoRand "crypto/rand"
 	"io"
 
-	"github.com/cloudflare/circl/abe/cpabe/tkn20/internal/dsl"
-	"github.com/cloudflare/circl/abe/cpabe/tkn20/internal/tkn"
+	"github.com/katzenpost/circl/abe/cpabe/tkn20/internal/dsl"
+	"github.com/katzenpost/circl/abe/cpabe/tkn20/internal/tkn"
 )
 
 type PublicKey struct {

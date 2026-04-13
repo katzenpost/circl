@@ -3,7 +3,7 @@ package histogram
 import (
 	"testing"
 
-	"github.com/cloudflare/circl/vdaf/prio3/internal/flp_test"
+	"github.com/katzenpost/circl/vdaf/prio3/internal/flp_test"
 )
 
 func TestHistogram(t *testing.T) {

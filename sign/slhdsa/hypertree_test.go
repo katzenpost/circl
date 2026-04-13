@@ -3,7 +3,7 @@ package slhdsa
 import (
 	"testing"
 
-	"github.com/cloudflare/circl/internal/test"
+	"github.com/katzenpost/circl/internal/test"
 )
 
 func testHyperTree(t *testing.T, p *params) {

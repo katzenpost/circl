@@ -1,6 +1,6 @@
 package x448
 
-import fp "github.com/cloudflare/circl/math/fp448"
+import fp "github.com/katzenpost/circl/math/fp448"
 
 // tableGenerator contains the set of points:
 //

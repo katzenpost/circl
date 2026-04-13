@@ -7,7 +7,7 @@
 package p751
 
 import (
-	. "github.com/cloudflare/circl/dh/sidh/internal/common"
+	. "github.com/katzenpost/circl/dh/sidh/internal/common"
 )
 
 // If choice = 0, leave x unchanged. If choice = 1, sets x to y.

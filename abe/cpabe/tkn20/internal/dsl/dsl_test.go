@@ -4,8 +4,8 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/cloudflare/circl/abe/cpabe/tkn20/internal/dsl"
-	"github.com/cloudflare/circl/abe/cpabe/tkn20/internal/tkn"
+	"github.com/katzenpost/circl/abe/cpabe/tkn20/internal/dsl"
+	"github.com/katzenpost/circl/abe/cpabe/tkn20/internal/tkn"
 )
 
 var testCases = []struct {

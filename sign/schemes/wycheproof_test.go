@@ -8,8 +8,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/cloudflare/circl/internal/test"
-	"github.com/cloudflare/circl/sign"
+	"github.com/katzenpost/circl/internal/test"
+	"github.com/katzenpost/circl/sign"
 )
 
 const testDir = "testdata/wycheproof"

@@ -5,4 +5,4 @@
 //
 // Following blog post describes ideas behind CIRCL in more details:
 // https://blog.cloudflare.com/introducing-circl/
-package circl // github.com/cloudflare/circl
+package circl // github.com/katzenpost/circl

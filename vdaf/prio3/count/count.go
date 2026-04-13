@@ -4,10 +4,10 @@ package count
 import (
 	"crypto/subtle"
 
-	"github.com/cloudflare/circl/vdaf/prio3/arith"
-	"github.com/cloudflare/circl/vdaf/prio3/arith/fp64"
-	"github.com/cloudflare/circl/vdaf/prio3/internal/flp"
-	"github.com/cloudflare/circl/vdaf/prio3/internal/prio3"
+	"github.com/katzenpost/circl/vdaf/prio3/arith"
+	"github.com/katzenpost/circl/vdaf/prio3/arith/fp64"
+	"github.com/katzenpost/circl/vdaf/prio3/internal/flp"
+	"github.com/katzenpost/circl/vdaf/prio3/internal/prio3"
 )
 
 type (

@@ -5,7 +5,7 @@ package arith
 import (
 	"testing"
 
-	"github.com/cloudflare/circl/vdaf/prio3/arith/fp64"
+	"github.com/katzenpost/circl/vdaf/prio3/arith/fp64"
 )
 
 func TestFp64(t *testing.T) {

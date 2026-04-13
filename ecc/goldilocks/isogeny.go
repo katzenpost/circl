@@ -1,6 +1,6 @@
 package goldilocks
 
-import fp "github.com/cloudflare/circl/math/fp448"
+import fp "github.com/katzenpost/circl/math/fp448"
 
 func (Curve) pull(P *twistPoint) *Point      { return twistCurve{}.push(P) }
 func (twistCurve) pull(P *Point) *twistPoint { return Curve{}.push(P) }

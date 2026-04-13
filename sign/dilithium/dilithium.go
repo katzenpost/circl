@@ -13,17 +13,17 @@
 // subpackage.  For instance, Dilithium2 (the recommended mode)
 // can be found in
 //
-//	github.com/cloudflare/circl/sign/dilithium/mode2
+//	github.com/katzenpost/circl/sign/dilithium/mode2
 //
 // If your choice for mode is fixed compile-time, use the subpackages.
 // To choose a scheme at runtime, use the generic signatures API under
 //
-//	github.com/cloudflare/circl/sign/schemes
+//	github.com/katzenpost/circl/sign/schemes
 //
 // The packages
 //
-//	github.com/cloudflare/circl/sign/eddilithium2
-//	github.com/cloudflare/circl/sign/eddilithium3
+//	github.com/katzenpost/circl/sign/eddilithium2
+//	github.com/katzenpost/circl/sign/eddilithium3
 //
 // implement hybrids of Dilithium2 with Ed25519 respectively and
 // Dilithium3 with Ed448.  These packages are a drop in replacements for the

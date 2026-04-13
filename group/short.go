@@ -15,9 +15,9 @@ import (
 	"math/big"
 	"slices"
 
-	optP384 "github.com/cloudflare/circl/ecc/p384"
-	"github.com/cloudflare/circl/expander"
-	"github.com/cloudflare/circl/internal/conv"
+	optP384 "github.com/katzenpost/circl/ecc/p384"
+	"github.com/katzenpost/circl/expander"
+	"github.com/katzenpost/circl/internal/conv"
 	"golang.org/x/crypto/cryptobyte"
 )
 

@@ -6,5 +6,5 @@
 //	https://pq-crystals.org/kyber/data/kyber-specification-round3.pdf
 //
 // The related key encapsulation mechanism (KEM) CRYSTALS-Kyber.CCAKEM can
-// be found in the package github.com/cloudflare/circl/kem/kyber.
+// be found in the package github.com/katzenpost/circl/kem/kyber.
 package kyber

@@ -35,7 +35,7 @@ import (
 	"io"
 	"math/big"
 
-	"github.com/cloudflare/circl/blindsign/blindrsa/internal/keys"
+	"github.com/katzenpost/circl/blindsign/blindrsa/internal/keys"
 )
 
 var (

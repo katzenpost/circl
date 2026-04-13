@@ -5,11 +5,11 @@ import (
 	"encoding/binary"
 	"testing"
 
-	"github.com/cloudflare/circl/internal/sha3"
-	"github.com/cloudflare/circl/internal/test"
-	"github.com/cloudflare/circl/vdaf/prio3/arith"
-	"github.com/cloudflare/circl/vdaf/prio3/arith/fp128"
-	"github.com/cloudflare/circl/vdaf/prio3/internal/prio3"
+	"github.com/katzenpost/circl/internal/sha3"
+	"github.com/katzenpost/circl/internal/test"
+	"github.com/katzenpost/circl/vdaf/prio3/arith"
+	"github.com/katzenpost/circl/vdaf/prio3/arith/fp128"
+	"github.com/katzenpost/circl/vdaf/prio3/internal/prio3"
 )
 
 type VecXof struct {

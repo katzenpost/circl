@@ -5,8 +5,8 @@ import (
 	cryptoRand "crypto/rand"
 	"crypto/subtle"
 
-	"github.com/cloudflare/circl/kem"
-	"github.com/cloudflare/circl/kem/mlkem/mlkem768"
+	"github.com/katzenpost/circl/kem"
+	"github.com/katzenpost/circl/kem/mlkem/mlkem768"
 )
 
 // This file contains the boilerplate code to connect X-Wing to the

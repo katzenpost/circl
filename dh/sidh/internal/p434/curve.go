@@ -5,7 +5,7 @@ package p434
 
 import (
 	"errors"
-	. "github.com/cloudflare/circl/dh/sidh/internal/common"
+	. "github.com/katzenpost/circl/dh/sidh/internal/common"
 	"math"
 )
 

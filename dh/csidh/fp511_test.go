@@ -5,7 +5,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/cloudflare/circl/internal/test"
+	"github.com/katzenpost/circl/internal/test"
 )
 
 func testFp512Mul3Nominal(t *testing.T, f func(*fp, *fp, uint64)) {

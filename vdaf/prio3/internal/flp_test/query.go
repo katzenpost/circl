@@ -4,11 +4,11 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/cloudflare/circl/internal/sha3"
-	"github.com/cloudflare/circl/internal/test"
-	"github.com/cloudflare/circl/math"
-	"github.com/cloudflare/circl/vdaf/prio3/arith"
-	"github.com/cloudflare/circl/vdaf/prio3/internal/flp"
+	"github.com/katzenpost/circl/internal/sha3"
+	"github.com/katzenpost/circl/internal/test"
+	"github.com/katzenpost/circl/math"
+	"github.com/katzenpost/circl/vdaf/prio3/arith"
+	"github.com/katzenpost/circl/vdaf/prio3/internal/flp"
 )
 
 func TestInvalidQuery[

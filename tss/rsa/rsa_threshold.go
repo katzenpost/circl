@@ -18,7 +18,7 @@ import (
 	"math"
 	"math/big"
 
-	cmath "github.com/cloudflare/circl/math"
+	cmath "github.com/katzenpost/circl/math"
 )
 
 // GenerateKey generates a RSA keypair for its use in RSA threshold signatures.

@@ -6,10 +6,10 @@ import (
 	"io"
 	"testing"
 
-	"github.com/cloudflare/circl/internal/sha3"
-	"github.com/cloudflare/circl/internal/test"
-	"github.com/cloudflare/circl/sign/slhdsa"
-	"github.com/cloudflare/circl/xof"
+	"github.com/katzenpost/circl/internal/sha3"
+	"github.com/katzenpost/circl/internal/test"
+	"github.com/katzenpost/circl/sign/slhdsa"
+	"github.com/katzenpost/circl/xof"
 )
 
 var fastSign = [...]slhdsa.ID{

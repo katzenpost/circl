@@ -3,8 +3,8 @@ package slhdsa
 import (
 	"crypto/rand"
 
-	"github.com/cloudflare/circl/internal/sha3"
-	"github.com/cloudflare/circl/sign"
+	"github.com/katzenpost/circl/internal/sha3"
+	"github.com/katzenpost/circl/sign"
 )
 
 func (id ID) Scheme() sign.Scheme { return scheme{id.params()} }

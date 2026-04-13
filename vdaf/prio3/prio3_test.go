@@ -6,13 +6,13 @@ import (
 	"slices"
 	"testing"
 
-	"github.com/cloudflare/circl/internal/test"
-	"github.com/cloudflare/circl/vdaf/prio3/count"
-	"github.com/cloudflare/circl/vdaf/prio3/histogram"
-	"github.com/cloudflare/circl/vdaf/prio3/internal/prio3"
-	"github.com/cloudflare/circl/vdaf/prio3/mhcv"
-	"github.com/cloudflare/circl/vdaf/prio3/sum"
-	"github.com/cloudflare/circl/vdaf/prio3/sumvec"
+	"github.com/katzenpost/circl/internal/test"
+	"github.com/katzenpost/circl/vdaf/prio3/count"
+	"github.com/katzenpost/circl/vdaf/prio3/histogram"
+	"github.com/katzenpost/circl/vdaf/prio3/internal/prio3"
+	"github.com/katzenpost/circl/vdaf/prio3/mhcv"
+	"github.com/katzenpost/circl/vdaf/prio3/sum"
+	"github.com/katzenpost/circl/vdaf/prio3/sumvec"
 )
 
 type Prio3[

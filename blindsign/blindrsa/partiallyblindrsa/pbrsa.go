@@ -11,8 +11,8 @@ import (
 	"io"
 	"math/big"
 
-	"github.com/cloudflare/circl/blindsign/blindrsa/internal/common"
-	"github.com/cloudflare/circl/blindsign/blindrsa/internal/keys"
+	"github.com/katzenpost/circl/blindsign/blindrsa/internal/common"
+	"github.com/katzenpost/circl/blindsign/blindrsa/internal/keys"
 	"golang.org/x/crypto/hkdf"
 )
 

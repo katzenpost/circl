@@ -1,8 +1,8 @@
 package prio3
 
 import (
-	"github.com/cloudflare/circl/internal/conv"
-	"github.com/cloudflare/circl/vdaf/prio3/arith"
+	"github.com/katzenpost/circl/internal/conv"
+	"github.com/katzenpost/circl/vdaf/prio3/arith"
 	"golang.org/x/crypto/cryptobyte"
 )
 

@@ -1,10 +1,10 @@
 package flp
 
 import (
-	"github.com/cloudflare/circl/math"
-	"github.com/cloudflare/circl/vdaf/prio3/arith"
-	"github.com/cloudflare/circl/vdaf/prio3/arith/fp128"
-	"github.com/cloudflare/circl/vdaf/prio3/internal/cursor"
+	"github.com/katzenpost/circl/math"
+	"github.com/katzenpost/circl/vdaf/prio3/arith"
+	"github.com/katzenpost/circl/vdaf/prio3/arith/fp128"
+	"github.com/katzenpost/circl/vdaf/prio3/internal/cursor"
 )
 
 type Params struct {

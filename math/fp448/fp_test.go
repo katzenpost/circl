@@ -6,8 +6,8 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/cloudflare/circl/internal/conv"
-	"github.com/cloudflare/circl/internal/test"
+	"github.com/katzenpost/circl/internal/conv"
+	"github.com/katzenpost/circl/internal/test"
 )
 
 func testCmov(t *testing.T, f func(x, y *Elt, n uint)) {

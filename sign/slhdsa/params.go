@@ -10,7 +10,7 @@ import (
 	"io"
 	"strings"
 
-	"github.com/cloudflare/circl/internal/sha3"
+	"github.com/katzenpost/circl/internal/sha3"
 )
 
 // [ID] identifies the supported parameter sets of SLH-DSA.

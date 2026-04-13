@@ -14,18 +14,18 @@ package schemes
 import (
 	"strings"
 
-	"github.com/cloudflare/circl/sign"
-	dilithium2 "github.com/cloudflare/circl/sign/dilithium/mode2"
-	dilithium3 "github.com/cloudflare/circl/sign/dilithium/mode3"
-	dilithium5 "github.com/cloudflare/circl/sign/dilithium/mode5"
-	"github.com/cloudflare/circl/sign/ed25519"
-	"github.com/cloudflare/circl/sign/ed448"
-	"github.com/cloudflare/circl/sign/eddilithium2"
-	"github.com/cloudflare/circl/sign/eddilithium3"
-	"github.com/cloudflare/circl/sign/mldsa/mldsa44"
-	"github.com/cloudflare/circl/sign/mldsa/mldsa65"
-	"github.com/cloudflare/circl/sign/mldsa/mldsa87"
-	"github.com/cloudflare/circl/sign/slhdsa"
+	"github.com/katzenpost/circl/sign"
+	dilithium2 "github.com/katzenpost/circl/sign/dilithium/mode2"
+	dilithium3 "github.com/katzenpost/circl/sign/dilithium/mode3"
+	dilithium5 "github.com/katzenpost/circl/sign/dilithium/mode5"
+	"github.com/katzenpost/circl/sign/ed25519"
+	"github.com/katzenpost/circl/sign/ed448"
+	"github.com/katzenpost/circl/sign/eddilithium2"
+	"github.com/katzenpost/circl/sign/eddilithium3"
+	"github.com/katzenpost/circl/sign/mldsa/mldsa44"
+	"github.com/katzenpost/circl/sign/mldsa/mldsa65"
+	"github.com/katzenpost/circl/sign/mldsa/mldsa87"
+	"github.com/katzenpost/circl/sign/slhdsa"
 )
 
 var allSchemes = [...]sign.Scheme{

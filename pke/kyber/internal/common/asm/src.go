@@ -9,7 +9,7 @@ import (
 	. "github.com/mmcloughlin/avo/operand" // nolint:golint,stylecheck
 	. "github.com/mmcloughlin/avo/reg"     // nolint:golint,stylecheck
 
-	"github.com/cloudflare/circl/pke/kyber/internal/common/params"
+	"github.com/katzenpost/circl/pke/kyber/internal/common/params"
 )
 
 // XXX align Poly on 16 bytes such that we can use aligned moves
@@ -177,7 +177,7 @@ func invNttAVX2() {
 
 	// A diagram of the order of the butterflies and swaps can be found here:
 	//
-	//  https://github.com/cloudflare/circl/wiki/images/kyber-invntt-avx2.svg
+	//  https://github.com/katzenpost/circl/wiki/images/kyber-invntt-avx2.svg
 	//
 	// The vertical lines with circles on the end represent butterflies.
 	// The number in those butterflies refers to the index into the Zetas
@@ -501,7 +501,7 @@ func nttAVX2() {
 
 	// A diagram of the order of butterflies and swaps can be found here:
 	//
-	//  https://github.com/cloudflare/circl/wiki/images/kyber-ntt-avx2.svg
+	//  https://github.com/katzenpost/circl/wiki/images/kyber-ntt-avx2.svg
 	//
 	// The vertical lines with circles on the end represent butterflies.
 	// The number in those butterflies refers to the index into the Zetas

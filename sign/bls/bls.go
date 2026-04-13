@@ -34,7 +34,7 @@ import (
 	"errors"
 	"io"
 
-	GG "github.com/cloudflare/circl/ecc/bls12381"
+	GG "github.com/katzenpost/circl/ecc/bls12381"
 	"golang.org/x/crypto/hkdf"
 )
 

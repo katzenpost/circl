@@ -5,7 +5,7 @@ import (
 	"crypto"
 	"crypto/subtle"
 
-	"github.com/cloudflare/circl/internal/conv"
+	"github.com/katzenpost/circl/internal/conv"
 	"golang.org/x/crypto/cryptobyte"
 )
 

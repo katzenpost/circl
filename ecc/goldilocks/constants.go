@@ -1,6 +1,6 @@
 package goldilocks
 
-import fp "github.com/cloudflare/circl/math/fp448"
+import fp "github.com/katzenpost/circl/math/fp448"
 
 var (
 	// genX is the x-coordinate of the generator of Goldilocks curve.
