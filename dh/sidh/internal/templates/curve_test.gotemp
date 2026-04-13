@@ -10,7 +10,7 @@ import (
 	"math/rand" 
 	crand "crypto/rand"
 	"io"
-	. "github.com/cloudflare/circl/dh/sidh/internal/common"
+	. "github.com/katzenpost/circl/dh/sidh/internal/common"
     "time"
 )
 
