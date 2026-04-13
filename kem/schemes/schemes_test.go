@@ -161,4 +161,14 @@ func Example_schemes() {
 	// P256Kyber768Draft00
 	// X25519MLKEM768
 	// X-Wing
+	// mceliece348864
+	// mceliece348864f
+	// mceliece460896
+	// mceliece460896f
+	// mceliece6688128
+	// mceliece6688128f
+	// mceliece6960119
+	// mceliece6960119f
+	// mceliece8192128
+	// mceliece8192128f
 }
