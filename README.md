@@ -3,9 +3,9 @@
 # CIRCL
 
 [![GitHub release](https://img.shields.io/github/release/cloudflare/circl.svg)](https://GitHub.com/cloudflare/circl/releases/)
-[![CIRCL](https://github.com/cloudflare/circl/workflows/CIRCL/badge.svg)](https://github.com/cloudflare/circl/actions)
-[![GoDoc](https://godoc.org/github.com/cloudflare/circl?status.svg)](https://pkg.go.dev/github.com/cloudflare/circl?tab=overview)
-[![Go Report Card](https://goreportcard.com/badge/github.com/cloudflare/circl)](https://goreportcard.com/report/github.com/cloudflare/circl)
+[![CIRCL](https://github.com/katzenpost/circl/workflows/CIRCL/badge.svg)](https://github.com/katzenpost/circl/actions)
+[![GoDoc](https://godoc.org/github.com/katzenpost/circl?status.svg)](https://pkg.go.dev/github.com/katzenpost/circl?tab=overview)
+[![Go Report Card](https://goreportcard.com/badge/github.com/katzenpost/circl)](https://goreportcard.com/report/github.com/katzenpost/circl)
 [![codecov](https://codecov.io/gh/cloudflare/circl/branch/main/graph/badge.svg)](https://codecov.io/gh/cloudflare/circl)
 
 **CIRCL** (Cloudflare Interoperable, Reusable Cryptographic Library) is a collection
@@ -15,14 +15,14 @@ Curve Cryptography (ECC).
 
 ## Security Disclaimer
 
-🚨 This library is offered as-is, and without a guarantee. Therefore, it is expected that changes in the code, repository, and API occur in the future. We recommend to take caution before using this library in a production application since part of its content is experimental. All security issues must be reported, please notify us immediately following the instructions given in our [Security Policy](https://github.com/cloudflare/circl/security/policy).
+🚨 This library is offered as-is, and without a guarantee. Therefore, it is expected that changes in the code, repository, and API occur in the future. We recommend to take caution before using this library in a production application since part of its content is experimental. All security issues must be reported, please notify us immediately following the instructions given in our [Security Policy](https://github.com/katzenpost/circl/security/policy).
 
 ## Installation
 
 You can get CIRCL by fetching:
 
 ```sh
-go get -u github.com/cloudflare/circl
+go get -u github.com/katzenpost/circl
 ```
 
 Alternatively, look at the [Cloudflare Go](https://github.com/cloudflare/go/tree/cf) fork to see how to integrate CIRCL natively in Go.
@@ -167,7 +167,7 @@ APA Style
 ```
 Faz-Hernandez, A. and Kwiatkowski, K. (2019). Introducing CIRCL:
 An Advanced Cryptographic Library. Cloudflare. Available at
-https://github.com/cloudflare/circl. v1.6.3 Accessed Jan, 2026.
+https://github.com/katzenpost/circl. v1.6.3 Accessed Jan, 2026.
 ```
 
 BibTeX Source
@@ -182,7 +182,7 @@ BibTeX Source
                    of this library is to be used as a tool for experimental
                    deployment of cryptographic algorithms targeting Post-Quantum (PQ)
                    and Elliptic Curve Cryptography (ECC).}},
-  note         = {Available at \url{https://github.com/cloudflare/circl}. v1.6.3 Accessed Jan, 2026},
+  note         = {Available at \url{https://github.com/katzenpost/circl}. v1.6.3 Accessed Jan, 2026},
   month        = jun,
   year         = {2019}
 }
