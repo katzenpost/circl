@@ -26,6 +26,16 @@ import (
 	"github.com/katzenpost/circl/kem/kyber/kyber1024"
 	"github.com/katzenpost/circl/kem/kyber/kyber512"
 	"github.com/katzenpost/circl/kem/kyber/kyber768"
+	"github.com/katzenpost/circl/kem/mceliece/mceliece348864"
+	"github.com/katzenpost/circl/kem/mceliece/mceliece348864f"
+	"github.com/katzenpost/circl/kem/mceliece/mceliece460896"
+	"github.com/katzenpost/circl/kem/mceliece/mceliece460896f"
+	"github.com/katzenpost/circl/kem/mceliece/mceliece6688128"
+	"github.com/katzenpost/circl/kem/mceliece/mceliece6688128f"
+	"github.com/katzenpost/circl/kem/mceliece/mceliece6960119"
+	"github.com/katzenpost/circl/kem/mceliece/mceliece6960119f"
+	"github.com/katzenpost/circl/kem/mceliece/mceliece8192128"
+	"github.com/katzenpost/circl/kem/mceliece/mceliece8192128f"
 	"github.com/katzenpost/circl/kem/mlkem/mlkem1024"
 	"github.com/katzenpost/circl/kem/mlkem/mlkem512"
 	"github.com/katzenpost/circl/kem/mlkem/mlkem768"
@@ -52,6 +62,16 @@ var allSchemes = [...]kem.Scheme{
 	hybrid.P256Kyber768Draft00(),
 	hybrid.X25519MLKEM768(),
 	xwing.Scheme(),
+	mceliece348864.Scheme(),
+	mceliece348864f.Scheme(),
+	mceliece460896.Scheme(),
+	mceliece460896f.Scheme(),
+	mceliece6688128.Scheme(),
+	mceliece6688128f.Scheme(),
+	mceliece6960119.Scheme(),
+	mceliece6960119f.Scheme(),
+	mceliece8192128.Scheme(),
+	mceliece8192128f.Scheme(),
 }
 
 var allSchemeNames map[string]kem.Scheme
