@@ -194,6 +194,7 @@ func cbRecursion(out []byte, pos, step int, pi []int16, w, n int32, temp []int32
 	pos -= int(2*w-2) * step * int(n/2)
 
 	p := (*int16)(unsafe.Pointer(&temp[n+n/4])) //nolint:gosec
+
 	q := unsafe.Slice(p, n) //nolint:gosec
 	for j := int32(0); j < n/2; j++ {
 		q[j] = int16(A[2*j]&0xffff) >> 1
