@@ -7,10 +7,8 @@ import (
 	"crypto/subtle"
 	"io"
 
-	"github.com/katzenpost/hpqc/kem"
-	"github.com/katzenpost/hpqc/kem/pem"
-
 	"github.com/katzenpost/circl/internal/sha3"
+	"github.com/katzenpost/circl/kem"
 )
 
 const (
@@ -475,10 +473,6 @@ func (pk *PublicKey) MarshalBinary() ([]byte, error) {
 	return ret[:], nil
 }
 
-func (pk *PublicKey) MarshalText() (text []byte, err error) {
-	return pem.ToPublicPEMBytes(pk), nil
-}
-
 func (*scheme) GenerateKeyPair() (kem.PublicKey, kem.PrivateKey, error) {
 	return generateKeyPair(cryptoRand.Reader)
 }
@@ -550,12 +544,4 @@ func (*scheme) UnmarshalBinaryPrivateKey(buf []byte) (kem.PrivateKey, error) {
 	var ret PrivateKey
 	ret.Unpack(buf)
 	return &ret, nil
-}
-
-func (s *scheme) UnmarshalTextPublicKey(text []byte) (kem.PublicKey, error) {
-	return pem.FromPublicPEMBytes(text, s)
-}
-
-func (s *scheme) UnmarshalTextPrivateKey(text []byte) (kem.PrivateKey, error) {
-	return pem.FromPrivatePEMBytes(text, s)
 }

@@ -19,11 +19,9 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/katzenpost/hpqc/kem"
-	"github.com/katzenpost/hpqc/kem/pem"
-
 	"github.com/katzenpost/circl/internal/nist"
 	"github.com/katzenpost/circl/internal/sha3"
+	"github.com/katzenpost/circl/kem"
 	"github.com/katzenpost/circl/kem/mceliece/internal"
 	"github.com/katzenpost/circl/math/gf2e13"
 )
@@ -183,7 +181,6 @@ func kemEncapsulate(c *[CiphertextSize]byte, key *[SharedKeySize]byte, pk *[Publ
 		return nil
 	}
 	return fmt.Errorf("public key padding error %d", paddingOk)
-
 }
 
 // KEM Decapsulation.
@@ -223,7 +220,6 @@ func kemDecapsulate(key *[SharedKeySize]byte, c *[CiphertextSize]byte, sk *[Priv
 		return nil
 	}
 	return fmt.Errorf("public key padding error %d", paddingOk)
-
 }
 
 // Generates `e`, a random error vector of weight `t`.
@@ -699,10 +695,6 @@ func (pk *PublicKey) MarshalBinary() ([]byte, error) {
 	return ret[:], nil
 }
 
-func (pk *PublicKey) MarshalText() (text []byte, err error) {
-	return pem.ToPublicPEMBytes(pk), nil
-}
-
 func (*scheme) GenerateKeyPair() (kem.PublicKey, kem.PrivateKey, error) {
 	seed := [32]byte{}
 	_, err := io.ReadFull(cryptoRand.Reader, seed[:])
@@ -793,12 +785,4 @@ func (*scheme) UnmarshalBinaryPrivateKey(buf []byte) (kem.PrivateKey, error) {
 	sk := [PrivateKeySize]byte{}
 	copy(sk[:], buf)
 	return &PrivateKey{sk: sk}, nil
-}
-
-func (s *scheme) UnmarshalTextPublicKey(text []byte) (kem.PublicKey, error) {
-	return pem.FromPublicPEMBytes(text, s)
-}
-
-func (s *scheme) UnmarshalTextPrivateKey(text []byte) (kem.PrivateKey, error) {
-	return pem.FromPrivatePEMBytes(text, s)
 }
