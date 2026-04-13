@@ -35,8 +35,7 @@ import (
 
 	"github.com/katzenpost/circl/ecc/goldilocks"
 	"github.com/katzenpost/circl/internal/sha3"
-
-	"github.com/katzenpost/hpqc/sign"
+	"github.com/katzenpost/circl/sign"
 )
 
 const (
