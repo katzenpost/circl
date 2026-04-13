@@ -52,11 +52,11 @@ func testPQCgenKATKem(t *testing.T, name, expected string) {
 	}
 	f := sha256.New()
 	g := nist.NewDRBG(&seed)
-	fmt.Fprintf(f, "# kem/%s\n\n", name)
+	_, _ = fmt.Fprintf(f, "# kem/%s\n\n", name)
 	for i := 0; i < 10; i++ {
 		g.Fill(seed[:])
-		fmt.Fprintf(f, "count = %d\n", i)
-		fmt.Fprintf(f, "seed = %X\n", seed)
+		_, _ = fmt.Fprintf(f, "count = %d\n", i)
+		_, _ = fmt.Fprintf(f, "seed = %X\n", seed)
 
 		g2 := nist.NewDRBG(&seed)
 
@@ -76,10 +76,10 @@ func testPQCgenKATKem(t *testing.T, name, expected string) {
 		if !bytes.Equal(ss, ss2) {
 			test.ReportError(t, fmt.Sprintf("%X", ss2), fmt.Sprintf("%X", ss))
 		}
-		fmt.Fprintf(f, "pk = %X\n", ppk)
-		fmt.Fprintf(f, "sk = %X\n", psk)
-		fmt.Fprintf(f, "ct = %X\n", ct)
-		fmt.Fprintf(f, "ss = %X\n\n", ss)
+		_, _ = fmt.Fprintf(f, "pk = %X\n", ppk)
+		_, _ = fmt.Fprintf(f, "sk = %X\n", psk)
+		_, _ = fmt.Fprintf(f, "ct = %X\n", ct)
+		_, _ = fmt.Fprintf(f, "ss = %X\n\n", ss)
 	}
 	if fmt.Sprintf("%x", f.Sum(nil)) != expected {
 		t.Fatal()
